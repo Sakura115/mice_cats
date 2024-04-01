@@ -1,0 +1,42 @@
+[gd_scene load_steps=8 format=2]
+
+[ext_resource path="res://code/map_select.gd" type="Script" id=1]
+[ext_resource path="res://data/map_pin.png" type="Texture" id=2]
+[ext_resource path="res://data/map.png" type="Texture" id=3]
+[ext_resource path="res://data/cat.png" type="Texture" id=4]
+[ext_resource path="res://data/mura.png" type="Texture" id=5]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 207.5, 207.5 )
+
+[sub_resource type="CircleShape2D" id=2]
+radius = 30.4138
+
+[node name="map" type="Area2D"]
+position = Vector2( 306, 25 )
+script = ExtResource( 1 )
+
+[node name="Sprite" type="Sprite" parent="."]
+position = Vector2( 210, 205 )
+scale = Vector2( 0.833407, 0.833407 )
+texture = ExtResource( 3 )
+
+[node name="Sprite" type="Sprite" parent="Sprite"]
+position = Vector2( -205.182, 172.785 )
+texture = ExtResource( 4 )
+
+[node name="Sprite2" type="Sprite" parent="Sprite"]
+position = Vector2( 183.584, 201.582 )
+texture = ExtResource( 5 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( 210, 205 )
+shape = SubResource( 1 )
+
+[node name="pin" type="Area2D" parent="."]
+
+[node name="Sprite" type="Sprite" parent="pin"]
+texture = ExtResource( 2 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="pin"]
+shape = SubResource( 2 )
