@@ -1,0 +1,7 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://data/model/mouse/mouse7_2.glb" type="PackedScene" id=1]
+[ext_resource path="res://code/mouse.gd" type="Script" id=2]
+
+[node name="mouse7_2" instance=ExtResource( 1 )]
+script = ExtResource( 2 )

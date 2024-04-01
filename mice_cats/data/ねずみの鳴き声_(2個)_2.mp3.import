@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/ねずみの鳴き声_(2個)_2.mp3-fc2bfd99a7b5acf6949fd08f65bf6b6f.mp3str"
+
+[deps]
+
+source_file="res://data/ねずみの鳴き声_(2個)_2.mp3"
+dest_files=[ "res://.import/ねずみの鳴き声_(2個)_2.mp3-fc2bfd99a7b5acf6949fd08f65bf6b6f.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0
